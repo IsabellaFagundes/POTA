@@ -11,10 +11,22 @@ public class Exercicio03 {
             return v[0];
 
         // geral
+
+         /*
+        int x = maior(v, tamanho-1);
+        if (v[tamanho-1] > x){
+            return v[tamanho-1];
+            return x;
+        }
+        */
+        
         int maiorAtual = maior(v, tamanho - 1);
         int valorPosicaoFinal = v[tamanho - 1];
 
         // return (v[tamanho - 1] > maiorAtual) ? v[tamanho - 1] : maiorAtual;
+       
         return Math.max(maiorAtual, valorPosicaoFinal);
+
+        
     }
 }

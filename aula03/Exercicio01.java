@@ -21,9 +21,9 @@ public class Exercicio01 {
 
     public static int multiplicaRec (int a, int b){
         //caso base
-        if(b == 0) return 0;
+        if(b == 0) return 0; //multiplicação por 0 é zero
         //caso geral
         //return a+(b-1)*a;
-        return a + multiplicaRec(a, b-1);
+        return a + multiplicaRec(a, b-1); //vai retornar o valor do + a multiplicação do a vezes o b-1
     }
 }
