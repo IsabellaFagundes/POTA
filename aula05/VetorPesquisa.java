@@ -51,7 +51,7 @@ public class VetorPesquisa {
     }
 
     //Algoritmo linear, pior caso Ó grande de N (tamanho do vetor), quanto maior o tamanho do vetor, maior o tempo (linearmente proporcional, aumenta um N, aumenta um no tempo)
-    //É um allgoritmo bom, mas não o melhor possível
+    //É um algoritmo bom, mas não o melhor possível
     public int buscaSeq(int key) { //método para buscar a chave dentro do vetor
         comparacoes = 0; //contador iniciando em 0 ele conta quantas vezes vai entrar no if (numero de comparações)
         for (int i = 0; i < v.length; i++) {
