@@ -20,9 +20,9 @@ public class Ordena {
     /* método bubbleSort padrão
     public void bubbleSort() {
         int iteracao, i, aux;
-        for (iteracao = 0; iteracao < v.length - 1; iteracao++)
+        for (iteracao = 0; iteracao < v.length - 1; iteracao++)//me dis quantas vezes eu vou percorrer o vetor
         {
-            for (i = 0; i < v.length - 1 - iteracao; i++)
+            for (i = 0; i < v.length - 1 - iteracao; i++) //percorre o vetor
                 if (v[i] > v[i + 1])
                 {
                     aux = v[i];
@@ -89,17 +89,17 @@ public class Ordena {
 
     public void bubbleSortRec() {
         compara = 0;
-        bubbleSortRec(v.length - 1);
+        bubbleSortRec(v.length - 1); //valor da variável fim
     }
 
     private void bubbleSortRec(int fim) {
-        for (int i = 0; i < fim; i++) {
+        for (int i = 0; i < fim; i++) {//roda a primeira vez
             compara++;
             if (v[i] > v[i + 1]) {
                 swap(i, i + 1);
             }
         }
-        if (fim > 1) {
+        if (fim > 1) {//se fim ainda for maior 1, chama recursivamente o método, mas com um tamanho menor
             bubbleSortRec(fim - 1);
         }
     }
